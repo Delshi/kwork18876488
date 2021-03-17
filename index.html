@@ -1,0 +1,473 @@
+<!--
+    <iframe id="playerYouTube" class="ng-star-inserted" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="100%" height="300px" src="https://www.youtube.com/embed/?controls=0&amp;autohide=1&amp;rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;disablekb=1&amp;enablejsapi=1&amp;widget_referrer=https%3A%2F%2Fvk.com%2F&amp;origin=https%3A%2F%2Fuser14260387-jwhtuyga.wormhole.vk-apps.com&amp;widgetid=1"></iframe>
+-->
+
+<!-- LOADER -->
+
+<div class="loader-wrapper">
+    <div class="loader_screen">
+        <!-- Портрэты -->
+        <div class="photos">
+            <img src="img/loader/1stPhoto.png" alt="img1" id="img_1">
+            <img src="img/loader/2ndPhoto.png.png" alt="img2" id="img_2">
+            <img src="img/loader/3rdPhoto.png" alt="img3" id="img_3">
+        </div>
+
+        <div class="loading"><span>Загрузка</span></div>
+
+        <!-- Звездочки -->
+        <div class="stars">
+            <img src="img/loader/star.png" alt="star1" id="star1">
+            <img src="img/loader/star.png" alt="star2" id="star2">
+            <img src="img/loader/star.png" alt="star3" id="star3">
+            <img src="img/loader/star.png" alt="star4" id="star4">
+            <img src="img/loader/star.png" alt="star5" id="star5">
+        </div>
+    </div>
+</div>
+
+<!--  1ST FRAME -->
+<div class="frame1">
+
+    <object data="img/frame1/stop_btn1.svg" type="image/svg+xml" class="stop-btn"></object>
+
+    <img src="img/frame1/bckgrnd_img.png" alt="background">
+
+    <div class="player">
+        <img src="img/frame1/player_avatar.png" alt="avatar">
+        <div class="nickname"><span>Диджей (ник игрока)</span></div>
+        <div class="ps"><span>*заказ песен неограничен</span></div>
+        <div class="start-btn" onclick="openModal();"><span>КНОПКА</span></div>
+    </div>
+
+</div>
+
+<!-- MODAL WINDOW -->
+<div class="modal-container" id="modal">
+    <div class="srch-area_n_btn">
+        <input type="search" placeholder="Поиск клипа">
+        <div class="srch-btn" onclick="hideVideos();">
+            <object data="img/frame1/srch_btn.svg" type="image/svg+xml" id="search--btn"></object>
+            <div class="close-btn">
+                <object data="img/frame1/close_btn.png" type="image/svg+xml" id="close_btn"></object>
+            </div>
+        </div>
+    </div>
+    <div class="video-area" id="vds">
+        <div class="videos">
+            <div class="songname"> <iframe id="playerYouTube" class="ng-star-inserted" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="100%" height="300px" src="https://www.youtube.com/embed/?controls=0&amp;autohide=1&amp;rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;disablekb=1&amp;enablejsapi=1&amp;widget_referrer=https%3A%2F%2Fvk.com%2F&amp;origin=https%3A%2F%2Fuser14260387-jwhtuyga.wormhole.vk-apps.com&amp;widgetid=1"></iframe>
+                <p>Название песни</p>
+            </div>
+        </div>
+        <div class="videos">
+            <div class="songname"> <iframe id="playerYouTube" class="ng-star-inserted" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="100%" height="300px" src="https://www.youtube.com/embed/?controls=0&amp;autohide=1&amp;rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;disablekb=1&amp;enablejsapi=1&amp;widget_referrer=https%3A%2F%2Fvk.com%2F&amp;origin=https%3A%2F%2Fuser14260387-jwhtuyga.wormhole.vk-apps.com&amp;widgetid=1"></iframe>
+                <p>Название песни</p>
+            </div>
+        </div>
+        <div class="videos">
+            <div class="songname"> <iframe id="playerYouTube" class="ng-star-inserted" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="100%" height="300px" src="https://www.youtube.com/embed/?controls=0&amp;autohide=1&amp;rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;disablekb=1&amp;enablejsapi=1&amp;widget_referrer=https%3A%2F%2Fvk.com%2F&amp;origin=https%3A%2F%2Fuser14260387-jwhtuyga.wormhole.vk-apps.com&amp;widgetid=1"></iframe>
+                <p>Название песни</p>
+            </div>
+        </div>
+        <div class="videos">
+            <div class="songname"> <iframe id="playerYouTube" class="ng-star-inserted" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="100%" height="300px" src="https://www.youtube.com/embed/?controls=0&amp;autohide=1&amp;rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;disablekb=1&amp;enablejsapi=1&amp;widget_referrer=https%3A%2F%2Fvk.com%2F&amp;origin=https%3A%2F%2Fuser14260387-jwhtuyga.wormhole.vk-apps.com&amp;widgetid=1"></iframe>
+                <p>Название песни</p>
+            </div>
+        </div>
+        <div class="videos">
+            <div class="songname"> <iframe id="playerYouTube" class="ng-star-inserted" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="100%" height="300px" src="https://www.youtube.com/embed/?controls=0&amp;autohide=1&amp;rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;disablekb=1&amp;enablejsapi=1&amp;widget_referrer=https%3A%2F%2Fvk.com%2F&amp;origin=https%3A%2F%2Fuser14260387-jwhtuyga.wormhole.vk-apps.com&amp;widgetid=1"></iframe>
+                <p>Название песни</p>
+            </div>
+        </div>
+        <div class="videos">
+            <div class="songname"> <iframe id="playerYouTube" class="ng-star-inserted" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="100%" height="300px" src="https://www.youtube.com/embed/?controls=0&amp;autohide=1&amp;rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;disablekb=1&amp;enablejsapi=1&amp;widget_referrer=https%3A%2F%2Fvk.com%2F&amp;origin=https%3A%2F%2Fuser14260387-jwhtuyga.wormhole.vk-apps.com&amp;widgetid=1"></iframe>
+                <p>Название песни</p>
+            </div>
+        </div>
+        <div class="videos">
+            <div class="songname"> <iframe id="playerYouTube" class="ng-star-inserted" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="100%" height="300px" src="https://www.youtube.com/embed/?controls=0&amp;autohide=1&amp;rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;disablekb=1&amp;enablejsapi=1&amp;widget_referrer=https%3A%2F%2Fvk.com%2F&amp;origin=https%3A%2F%2Fuser14260387-jwhtuyga.wormhole.vk-apps.com&amp;widgetid=1"></iframe>
+                <p>Название песни</p>
+            </div>
+        </div>
+        <div class="videos">
+            <div class="songname"> <iframe id="playerYouTube" class="ng-star-inserted" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="100%" height="300px" src="https://www.youtube.com/embed/?controls=0&amp;autohide=1&amp;rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;disablekb=1&amp;enablejsapi=1&amp;widget_referrer=https%3A%2F%2Fvk.com%2F&amp;origin=https%3A%2F%2Fuser14260387-jwhtuyga.wormhole.vk-apps.com&amp;widgetid=1"></iframe>
+                <p>Название песни</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--</div>-->
+
+<style>
+    ::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    ::-webkit-scrollbar-button {
+        display: none;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: #4ACFEC;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        height: 10px;
+        background-color: #828282;
+        border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-track-piece {
+        background-color: #4ACFEC;
+    }
+
+    ::-webkit-resizer {
+        background-color: #4ACFEC;
+    }
+
+    /*LOADER*/
+
+    .loader-wrapper {
+        background-image: url(img/loader/water-1330252_1920%201.png);
+        background-repeat: repeat;
+        height: 100%;
+        width: 100%;
+    }
+
+    .loader_screen {
+        max-width: 600px;
+        height: 800px;
+        margin: 0 auto;
+    }
+
+    .loading {
+        padding-top: 45px;
+        height: 82px;
+        margin: 0 auto;
+    }
+
+    .loading span {
+        padding-left: 25%;
+        text-align: center;
+        width: 573.02px;
+        height: 82px;
+        font-family: Ultra;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 72px;
+        line-height: 117.69%;
+        letter-spacing: -0.02em;
+        -webkit-text-stroke: 2px #FFFFFF;
+    }
+
+    .photos {
+        max-width: 600px;
+        height: 330px;
+    }
+
+    #img_1 {
+        position: relative;
+        width: 165.99px;
+        height: 221.42px;
+        left: 25.32px;
+        top: 37.11px;
+        transform: matrix(0.98, -0.16, 0.2, 0.99, 0, 0);
+        background: background: url(img/62.png);
+    }
+
+    #img_2 {
+        position: relative;
+        width: 220.99px;
+        height: 281.42px;
+        left: 30.61px;
+        top: 100.88px;
+        background: url(65.png);
+        transform: matrix(0.99, 0.14, -0.1, 0.99, 0, 0);
+    }
+
+    #img_3 {
+        position: relative;
+        width: 197.14px;
+        height: 242.18px;
+        top: 53.87px;
+        background: url(58.png);
+        transform: matrix(0.96, 0.32, -0.28, 0.95, 0, 0);
+    }
+
+    .stars {
+        width: 600px;
+        height: 86px;
+        padding-top: 60px;
+        margin: 0 auto;
+    }
+
+    #star1 {
+        width: 91.52px;
+        height: 86px;
+        padding-left: 35px;
+    }
+
+    #star2 {
+        width: 91.52px;
+        height: 86px;
+        padding-left: 15px;
+    }
+
+    #star3 {
+        width: 91.52px;
+        height: 86px;
+        padding-left: 15px;
+    }
+
+    #star4 {
+        width: 91.52px;
+        height: 86px;
+        padding-left: 15px;
+    }
+
+    #star5 {
+        width: 91.52px;
+        height: 86px;
+        padding-left: 15px;
+    }
+
+    /*исчезает после загрузки*/
+    .loader-wrapper,
+    loader_screen {
+        display: none;
+    }
+
+    /*1ST FRAME*/
+
+    .frame1 {
+        width: 600px;
+        height: 309px;
+        background-color: #FFFFFF;
+    }
+
+    .stop-btn {
+        width: 256px;
+        height: 46px;
+        margin-left: 172px;
+        margin-top: 4px;
+    }
+
+    .frame1 img {
+        padding-left: 4px;
+        padding-top: 10px;
+        width: 591px;
+        height: 242px;
+    }
+
+    .player {
+        position: absolute;
+        width: 289px;
+        height: 90px;
+        left: 169px;
+        top: 192px;
+        border-radius: 17px;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .player img {
+        width: 56px;
+        height: 81px;
+        padding-top: 4px;
+        padding-left: 26px;
+        opacity: 100;
+    }
+
+    .nickname {
+        width: 95px;
+        height: 11px;
+        display: inline-block;
+        position: absolute;
+        top: 18px;
+        left: 48%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        float: left;
+    }
+
+    .nickname span {
+        font-family: Petrona;
+        font-size: 10px;
+        line-height: 11px;
+        text-align: center;
+        letter-spacing: 0.025em;
+        color: #FFFFFF;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .ps {
+        width: 107px;
+        height: 11px;
+        display: inline-block;
+        position: absolute;
+        top: 32px;
+        left: 45%;
+    }
+
+    .ps span {
+        font-family: Petrona;
+        width: 122px;
+        height: 10px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 9px;
+        line-height: 10px;
+        text-align: center;
+        letter-spacing: 0.025em;
+        color: #979797;
+    }
+
+    /* К КНОПКЕ ПОЙДУТ СКРИПТЫ НА ОТКРЫТИЕ МОДАЛЬНОГО ОКНА */
+    .start-btn {
+        position: absolute;
+        width: 160px;
+        height: 35px;
+        left: 105px;
+        top: 50px;
+        background: #D2CD41;
+        border: 5px solid #E5E5E5;
+        box-sizing: border-box;
+        box-shadow: 5px 6px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 19px;
+        opacity: 100;
+    }
+
+    .start-btn span {
+        display: block;
+        font-family: Petrona;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.025em;
+        color: #EDEDED;
+        margin: 0 auto;
+        margin-top: 2px;
+    }
+
+    /* ИЗНАЧАЛЬНО display:none */
+    /*
+    .frame1 {
+        display: none;
+    }
+*/
+
+    /* MODAL WINDOW */
+
+    .modal-container {
+        position: absolute;
+        left: 23px;
+        top: 75px;
+        width: 567px;
+        height: 228px;
+        background-color: #4ACFEC;
+        border: 5px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 12px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    /* тушка модального окна */
+    /* ИЗНАЧАЛЬНО display:none */
+
+    /*
+    .modal-container {
+        display: none;
+    }
+*/
+
+    .srch-area_n_btn input {
+        position: absolute;
+        width: 350px;
+        height: 24px;
+        left: 15px;
+        top: 6px;
+        border-radius: 4px;
+        border: 1px solid #A6A6A6;
+        box-sizing: border-box;
+    }
+
+    .srch-btn {
+        width: 107px;
+        height: 24px;
+        padding-left: 373px;
+        padding-top: 6px;
+    }
+
+    .close-btn {
+        position: absolute;
+        width: 29px;
+        height: 27px;
+        left: 516px;
+        top: 4px;
+    }
+
+    .video-area {
+        width: 560px;
+        height: 180px;
+        padding-left: 0px;
+        padding-top: 0px;
+        margin-top: 5px;
+    }
+
+    .videos {
+        margin-left: 16px;
+        margin-top: 15px;
+        width: 120px;
+        height: 68px;
+        background-image: url(img/frame1/video_bg.png);
+        display: inline-block;
+        float: left;
+        border-radius: 3px;
+    }
+
+    .songname {
+        width: 97px;
+        height: 20px;
+        margin-left: 12px;
+        margin-top: 38px;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .songname p {
+        font-family: Petrona;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 11px;
+        text-align: center;
+        letter-spacing: 0.025em;
+        color: #FFFFFF;
+        padding-top: 3px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        white-space: nowrap;
+    }
+
+    .videos:hover {
+        outline: 2px solid #FF7800;
+    }
+
+    iframe {
+        width: 120px;
+        height: 68px;
+        margin-top: -38px;
+        margin-left: -12px;
+        display: inline-block;
+        float: left;
+        border-radius: 3px;
+    }
