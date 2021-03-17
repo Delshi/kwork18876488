@@ -31,7 +31,7 @@
 
     <object data="img/frame1/stop_btn1.svg" type="image/svg+xml" class="stop-btn"></object>
 
-    <img src="img/frame1/bckgrnd_img.png" alt="background">
+        <div class="ytb-player"><iframe id="playerYouTube" class="ng-star-inserted" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="100%" height="300px" src="https://www.youtube.com/embed/?controls=0&amp;autohide=1&amp;rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;disablekb=1&amp;enablejsapi=1&amp;widget_referrer=https%3A%2F%2Fvk.com%2F&amp;origin=https%3A%2F%2Fuser14260387-jwhtuyga.wormhole.vk-apps.com&amp;widgetid=1"></iframe></div>
 
     <div class="player">
         <img src="img/frame1/player_avatar.png" alt="avatar">
@@ -55,12 +55,12 @@
     </div>
     <div class="video-area" id="vds">
         <div class="videos">
-            <div class="songname"> <iframe id="playerYouTube" class="ng-star-inserted" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="100%" height="300px" src="https://www.youtube.com/embed/?controls=0&amp;autohide=1&amp;rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;disablekb=1&amp;enablejsapi=1&amp;widget_referrer=https%3A%2F%2Fvk.com%2F&amp;origin=https%3A%2F%2Fuser14260387-jwhtuyga.wormhole.vk-apps.com&amp;widgetid=1"></iframe>
+            <div class="songname">
                 <p>Название песни</p>
             </div>
         </div>
         <div class="videos">
-            <div class="songname"> <iframe id="playerYouTube" class="ng-star-inserted" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="100%" height="300px" src="https://www.youtube.com/embed/?controls=0&amp;autohide=1&amp;rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;disablekb=1&amp;enablejsapi=1&amp;widget_referrer=https%3A%2F%2Fvk.com%2F&amp;origin=https%3A%2F%2Fuser14260387-jwhtuyga.wormhole.vk-apps.com&amp;widgetid=1"></iframe>
+            <div class="songname">
                 <p>Название песни</p>
             </div>
         </div>
@@ -245,6 +245,7 @@
         width: 600px;
         height: 309px;
         background-color: #FFFFFF;
+        z-index: 1;
     }
 
     .stop-btn {
@@ -377,16 +378,17 @@
         border-radius: 12px;
         overflow-y: scroll;
         overflow-x: hidden;
+        z-index: 2;
     }
 
     /* тушка модального окна */
     /* ИЗНАЧАЛЬНО display:none */
 
-    /*
+    
     .modal-container {
         display: none;
     }
-*/
+
 
     .srch-area_n_btn input {
         position: absolute;
@@ -460,4 +462,14 @@
 
     .videos:hover {
         outline: 2px solid #FF7800;
+    }
+
+    ytb-player {
+        width: 600px;
+        z-index: 0;
+        pointer-events: none;
+    }
+    
+    iframe {
+        pointer-events: none;
     }
